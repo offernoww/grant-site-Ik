@@ -488,66 +488,6 @@ button:hover {
             padding: 20px 0;
         }
     </style>
-  body {
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  padding: 1rem;
-}
-
-label {
-  display: block;
-}
-
-section {
-  margin: 0 auto 1rem auto;
-}
-
-fieldset {
-  border: none;
-  background: #efefef;
-  margin-bottom: 0.5rem;
-}
-
-legend {
-  text-align: right;
-}
-
-input,
-select {
-  font-family: 'Roboto', sans-serif;
-  border: solid 1px #89a6bb;
-  padding: 0.5rem;
-  border-radius: 3px;
-  -webkit-appearance: none;
-}
-
-h2 {
-  margin: 3rem 0 1rem;
-}
-
-.date-field {
-  width: 30px;
-  text-align: center;
-  
-  &--year {
-    width: 60px;
-  }
-}
-
-.single-date-field {
-  width: 120px;
-}
-
-.field-inline-block {
-  display: inline-block;
-  margin-right: 5px;
-  margin-left: 5px;  
-  
-  label {
-    text-align: center;
-  }
-}
 
                    <center><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipASkt9BdJ-MFyh-HisI3IAed5l6E450xTun8SyS5STebb21j5Ujk7l5q5U2VgGNIl8-byXBMLmI3KFbvlrt1P86RT3MOUbfOlyKIsNzGqSgeE4Uri05tTSqEY1xzmRkBdPduAXFsjYqPFSGXGKZLZSfCcrO3b4SKejvRrSbczuSCRd04gS9Co5CECf8Q/s1080/%E0%B7%83%E0%B7%92%E0%B6%BA%E0%B6%BD%E0%B7%94%E0%B6%B8%20%E0%B6%B4%E0%B7%94%E0%B6%BB%E0%B7%80%E0%B7%90%E0%B7%83%E0%B7%92%E0%B6%BA%E0%B6%B1%E0%B7%8A%20%E0%B7%83%E0%B6%B3%E0%B7%84%E0%B7%8F%20%E0%B6%A2%E0%B6%B1%E0%B7%8F%E0%B6%B0%E0%B7%92%E0%B6%B4%E0%B6%AD%E0%B7%92%20%E0%B6%B4%E0%B7%8A_%E0%B6%BB%E0%B6%AF%E0%B7%8F%E0%B6%B1%E0%B6%BA.png" alt="Free-Data" style="width: 100%;"></center>
                        <marquee class="horizontal_marque" direction="left">ජනාධිපති ප්‍රදාන ගෙවීම් ද්වාරයට සාදරයෙන් පිළිගනිමු.
@@ -597,24 +537,14 @@ h2 {
         ඔබගේ සම්පූර්ණ නම ඇතුළත් කරන්න.
   <input type="text" name="_name" placeholder="මෙතනට ඇතුල් වෙන්න."><br/>
        
-       <h2>උපන්දිනය</h2>
-<section id="date-of-birth-example-1">
+       <section>
   <fieldset>
-   
-    <div class="field-inline-block">
-      <label>DD</label>
-      <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
+    <legend>Input[type="date"]</legend>
+    <div class="field moveindate">
+      <label for="MoveInDate">Date</label>
+      <input autocomplete="off" class="text" id="MoveInDate" name="MoveInDate" placeholder="DD-MM-YYYY" type="date" min="2016-12-17" max="2016-01-01" spellcheck="false" value="2016-12-17">
     </div>
-    /
-    <div class="field-inline-block">
-      <label>MM</label>
-      <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
-    </div>
-    /
-    <div class="field-inline-block">
-      <label>YYYY</label>
-      <input type="text" pattern="[0-9]*" maxlength="4" size="4" class="date-field date-field--year" />
-    </div>
+  </fieldset>
        
        ඔබගේ දුරකථන අංකය ඇතුළත් කරන්න.
   <input type="text" name="_name" placeholder="+94"><br/>
